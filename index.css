@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Pacifico&family=Roboto+Mono:wght@300&family=Shrikhand&family=Space+Mono&family=Spline+Sans+Mono&display=swap');
+
+
+/* Fuentes:
+* font-family: 'Montserrat', sans-serif;
+* font-family: 'Pacifico', cursive;
+* font-family: 'Roboto Mono', monospace;
+* font-family: 'Shrikhand', cursive;
+* font-family: 'Space Mono', monospace;
+* font-family: 'Spline Sans Mono', monospace;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+
+    --morado: #502d62;
+    --rojo: #ff6961;
+    --naranja: #f0932b;
+    --green: #52ae86;
+    --celeste: #84b6f4
+    ;
+
+    --secondColor: #583b5f;
+
+}
+
+/*!Primer Contenedor*/
+/* #region firstContainer*/
+
+.firstContainer{
+    height: 100vh;
+    /* border: solid 3px red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+
+    /* background-image: url(testImages/fondoDePrueba.jpg); */
+    background-color: var(--naranja);
+    background-size: contain;
+    background-position: center;
+}
+
+.titlePage{
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Shrikhand', cursive;
+    color: #dadada;
+    filter: drop-shadow(3px 3px 10px #000);
+    -webkit-filter: drop-shadow(3px 3px 10px #000);
+}
+.subTitlePage{
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Shrikhand', cursive;
+    color: #dadada;
+    filter: drop-shadow(3px 3px 10px #000);
+    -webkit-filter: drop-shadow(3px 3px 10px #000);
+}
+
+.arrow{
+    width: 100px;
+    filter: drop-shadow(3px 3px 10px #000);
+    -webkit-filter: drop-shadow(3px 3px 10px #000);
+    animation: arrowAnimation 1.5s infinite ease-in-out;
+    -webkit-animation: arrowAnimation 1.5s infinite ease-in-out;
+}
+
+/* #endregion firstContainer*/
+
+/*!Segundo Contenedor ¿Quien Soy?*/
+/* #region secondContainer*/
+
+.GabiImage{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    zoom: 150%;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    /* border: 3px solid #000; */
+    /* outline: solid 20px #c1c1c1; */
+
+    
+}
+.proyactsSection, .contactMeSection, .quienSoySection{
+    padding: 70px 0;
+    width: 100%;
+    background-color: #c1c1c1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quienSoySection{
+    background-color: var(--rojo);
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.quienSoyContent{
+    color: #ededed;
+    text-align: center;
+    margin: 0 30px;
+    filter: drop-shadow(3px 3px 10px #000);
+    -webkit-filter: drop-shadow(3px 3px 10px #000);
+}
+.quienSoyContent h2{
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+.quienSoyContent p{
+    font-size: 20px;
+}
+.next{
+    text-align: center;
+}
+
+/* #endregion secondContainer*/
+
+/*!Tercer Contenedor Habilidades*/
+/* #region thirdContainer*/
+
+.habilidadesSection{
+    height: 100vh;
+
+    background-color: var(--celeste);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.habilidadesContent{
+    background-color: var(--celeste);
+    width: 100%;
+    
+}
+
+.iconsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.habilidadesIcon{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+/* #endregion thirdContainer*/
+
+
+
+/*!Tercer Contenedor Proyectos*/
+/* #region fourContainer*/
+
+.proyactsSection{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--morado);
+}
+.proyects{
+    background-color: var(--morado);
+    width: 100%;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    padding: 50px 0;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: self-start;
+}
+.card{
+    background: linear-gradient(to top, rgb(0 0 0 / 0.7) 0%, rgb(0 0 0 / 0.0) 80%), url(realImages/banners/banner1.jpeg);
+    background-position: 50%;
+    background-size: cover;
+    width: 300px;
+    height: 100px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: .3s ease all;
+    -webkit-transition: .3s ease all;
+    -moz-transition: .3s ease all;
+    -ms-transition: .3s ease all;
+    -o-transition: .3s ease all;
+    margin: 20px 10px;
+}
+.card:nth-child(2){
+    background: linear-gradient(to top, rgb(0 0 0 / 0.7) 0%, rgb(0 0 0 / 0.0) 80%), url(realImages/banners/banner2.jpeg);
+    background-size: cover;
+}
+.card:nth-child(3){
+    background: linear-gradient(to top, rgb(0 0 0 / 0.7) 0%, rgb(0 0 0 / 0.0) 80%), url(realImages/banners/banner3.jpeg);
+    background-size: cover;
+}
+.card p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    margin-left: 10px;
+}
+.card:hover{
+    background-position: 50%;
+
+    height: 350px;
+    cursor: pointer;
+    transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+    -moz-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    -o-transform: scale(1.04);
+    transition: .3s ease all;
+    -webkit-transition: .3s ease all;
+    -moz-transition: .3s ease all;
+    -ms-transition: .3s ease all;
+    -o-transition: .3s ease all;
+}
+.card:hover > .button{
+    opacity: 1;
+    display: flex;
+    padding: 10px 20px;
+    margin: 10px;
+    animation: buttonApaer 1s;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.button{
+    text-decoration: none;
+    color: #111;
+    background-color: #dbdbdb;
+    opacity: 0;
+    display: flex;
+    margin: 0px 20px 10px 20px;
+    padding: 10px 20px;
+    animation: buttonApaer 1s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+    border: none;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: #111;
+    color: #dbdbdb;
+}
+
+.videoContainer{
+    display: block;
+    margin: 10px 30px;
+    width: 100%;
+}
+.videoClass{
+    margin: 0px 20px;
+}
+
+/* #endregion fourContainer*/
+
+
+
+
+.contactMeSection{
+    background-color: var(--green);
+    height: 100vh;
+}
+.contactMeContent{
+    background-color: var(--green);
+}
+
+
+@keyframes arrowAnimation {
+    0%{
+        transform: translateY(-20px);
+        -webkit-transform: translateY(-20px);
+        -moz-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        -o-transform: translateY(-20px);
+    }
+    50%{
+        transform: translateY(20px);
+        -webkit-transform: translateY(20px);
+        -moz-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+        -o-transform: translateY(20px);
+}
+    100%{
+        transform: translateY(-20px);
+        -webkit-transform: translateY(-20px);
+        -moz-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        -o-transform: translateY(-20px);
+    }
+}
