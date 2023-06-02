@@ -518,6 +518,10 @@ a{
         display: flex;
     }
 
+    .contactMeForm{
+        width: 90%;
+    }
+
 }
 @media screen and (max-height: 600px){
     .quienSoySection{
