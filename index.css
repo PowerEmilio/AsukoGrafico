@@ -291,16 +291,20 @@ a{
 
     height: 350px;
     cursor: pointer;
+
     transform: scale(1.04);
     -webkit-transform: scale(1.04);
     -moz-transform: scale(1.04);
     -ms-transform: scale(1.04);
     -o-transform: scale(1.04);
+
     transition: .3s ease all;
     -webkit-transition: .3s ease all;
     -moz-transition: .3s ease all;
     -ms-transition: .3s ease all;
     -o-transition: .3s ease all;
+
+    box-shadow: 3px 3px 5px #111;
 }
 .card:hover > .button{
     opacity: 1;
@@ -343,22 +347,37 @@ a{
     color: #dbdbdb;
 }
 
-.videoContainer{
-   display: flex;
-   justify-content: stretch;
-   align-items: center;
-   flex-wrap: wrap;
-   border: solid red 20px;
+.videosContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .gifs{
+    margin: 10px;
+    width: 350px;
+    height: 250px;
     border-radius: 20px;
-    width: 300px;
-    object-fit: cover;
-    margin: 0px 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
+}
+.gifs:hover{
+    transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+    -moz-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    -o-transform: scale(1.04);
+
+    transition: .3s ease all;
+    -webkit-transition: .3s ease all;
+    -moz-transition: .3s ease all;
+    -ms-transition: .3s ease all;
+    -o-transition: .3s ease all;
+
+    box-shadow: 3px 3px 5px #111;
 }
 
 /* #endregion fourContainer*/
@@ -474,7 +493,7 @@ a{
 
 
 /*! Responsive 768px de ancho*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     .proyects{
         padding: 0;
         margin: 0;
@@ -489,10 +508,22 @@ a{
         opacity: 1;
         margin: 0px 0px 10px 10px;
     }
+
+    .videosContainer{
+        width: 100vw;
+        flex-direction: row;
+
+    }
+    .gifs{
+        display: flex;
+    }
+
 }
 @media screen and (max-height: 600px){
     .quienSoySection{
+        min-height: 100vh;
         padding: 0px;
+        margin: 0px;
         justify-content: space-evenly;
     }
     .content{
