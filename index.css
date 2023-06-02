@@ -121,6 +121,7 @@ a{
 
 .GabiImage{
     padding: 10px;
+    margin: auto;
     display: flex;
     width: 200px;
     height: 200px;
@@ -466,6 +467,60 @@ a{
 
 /* #endregion fiveContainer*/
 
+/*! Contenedor Responsive*/
+/* #region responsive*/
+
+/*! Responsive 1920px de ancho*/
+
+
+/*! Responsive 768px de ancho*/
+@media screen and (max-width: 768px) {
+    .proyects{
+        padding: 0;
+        margin: 0;
+    }
+    .card{
+        height: 350px;
+    }
+    .card p{
+        margin: 10px;
+    }
+    .button{
+        opacity: 1;
+        margin: 0px 0px 10px 10px;
+    }
+}
+@media screen and (max-height: 600px){
+    .quienSoySection{
+        padding: 0px;
+        justify-content: space-evenly;
+    }
+    .content{
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .GabiImage{
+        width: 150px;
+        height: 150px;
+        float: left;
+    }
+    .quienSoyContent{
+        width: 50%;
+        float: right;
+    }
+
+    
+}
+
+/*! Responsive 400px de ancho*/
+
+/* #endregion responsive*/
+
+/*! Contenedor Animaciones*/
+/* #region animations*/
 
 @keyframes arrowAnimation {
     0%{
@@ -490,3 +545,5 @@ a{
         -o-transform: translateY(-20px);
     }
 }
+
+/* #endregion animations*/
