@@ -610,6 +610,15 @@ a{
         width: 150px;
     }
 
+    .upArrowContainer{
+        display: flex;
+        justify-content: center;
+    }
+    .upArrow{
+        margin: 10px 0px 0px 0px;
+        width: 60px;
+    }
+
 }
 
 /*! Responsive 600px de alto*/
@@ -710,14 +719,7 @@ a{
         width: 80px;
     }
 
-    .upArrowContainer{
-        display: flex;
-        justify-content: center;
-    }
-    .upArrow{
-        margin: 10px 0px 0px 0px;
-        width: 60px;
-    }
+    
 }
 
 /* #endregion responsive*/
