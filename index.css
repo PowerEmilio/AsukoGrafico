@@ -397,6 +397,7 @@ a{
     justify-content: center;
     align-items: center;
     color: #ededed;
+    padding: 60px 0px;
 }
 .contactMeContent{
     background-color: var(--green);
