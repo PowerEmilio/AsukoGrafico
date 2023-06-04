@@ -689,6 +689,13 @@ a{
         padding: 0;
         margin: 10px auto;
     }
+
+    .next h2{
+        font-size: 20px;
+    }
+    .arrow{
+        width: 80px;
+    }
 }
 
 /* #endregion responsive*/
