@@ -1,3 +1,3 @@
 # AsukoGrafico
 
-Portfolio de AukoGrafico, una pagina minimalista
+Portfolio de AsukoGrafico, una pagina minimalista
