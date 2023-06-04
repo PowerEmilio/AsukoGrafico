@@ -583,6 +583,22 @@ a{
         width: 90%;
     }
 
+    .asukoIconContainer{
+        display: block;
+        width: 100%;
+        margin: auto;
+        position: none;
+        display: block;
+        margin: auto;
+    }
+    .asukoIcon{
+        display: flex;
+        margin: auto;
+        position: none;
+        top: 0;
+        width: 150px;
+    }
+
 }
 
 /*! Responsive 600px de alto*/
@@ -657,21 +673,7 @@ a{
         width: 80%;
     }
 
-    .asukoIconContainer{
-        display: block;
-        width: 100%;
-        margin: auto;
-        position: none;
-        display: block;
-        margin: auto;
-    }
-    .asukoIcon{
-        display: flex;
-        margin: auto;
-        position: none;
-        top: 0;
-        width: 100px;
-    }
+    
 
     
     .contactMeForm h2{
