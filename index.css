@@ -233,6 +233,8 @@ a{
     display: flex;
     flex-direction: column;
     background-color: var(--morado);
+    min-height: 100vh;
+
 }
 .proyects{
     background-color: var(--morado);
@@ -242,7 +244,6 @@ a{
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
-    padding: 50px 0;
     
     display: flex;
     flex-wrap: wrap;
@@ -490,10 +491,70 @@ a{
 /* #region responsive*/
 
 /*! Responsive 1920px de ancho*/
+@media screen and (min-width: 1920px){
+    .titlePage{
+        font-size: 100px;
+    }
+    .next h2{
+        font-size: 50px;
+    }
+    .arrow{
+        width: 150px;
+    }
 
 
-/*! Responsive 768px de ancho*/
-@media screen and (max-width: 1000px) {
+
+    .GabiImage{
+        width: 250px;
+        height: 250px;
+    }
+    .quienSoyContent h2{
+        font-size: 40px;
+    }
+    .quienSoyContent p{
+        font-size: 30px;
+    }
+
+
+    .habilidadesIcon{
+        width: 150px;
+        height: 150px;
+    }
+
+
+    .proyactsSection{
+        min-height: 100vh;
+    }
+    .card{
+        width: 400px;
+    }
+    .card:hover{
+        height: 500px;
+    }
+    .gifs{
+        width: 400px;
+    }
+
+    .contactMeContent{
+        width: 100%;
+
+    }
+    .contactMeForm{
+        max-width: 900px;
+    }
+}
+
+
+/*! Responsive 1024px de ancho*/
+@media screen and (max-width: 1024px) {
+
+    .asukoIcon{
+        position: relative;
+        inset: none;
+        display: block;
+        margin: auto;
+    }
+
     .proyects{
         padding: 0;
         margin: 0;
@@ -510,7 +571,7 @@ a{
     }
 
     .videosContainer{
-        width: 100vw;
+        width: 100%;
         flex-direction: row;
 
     }
@@ -523,12 +584,24 @@ a{
     }
 
 }
+
+/*! Responsive 600px de alto*/
 @media screen and (max-height: 600px){
     .quienSoySection{
         min-height: 100vh;
         padding: 0px;
         margin: 0px;
         justify-content: space-evenly;
+    }
+    .quienSoyContent{
+        width: 50%;
+        float: right;
+    }
+    .quienSoyContent h2{
+        font-size: 26px;
+    }
+    .quienSoyContent p{
+        font-size: 16px;
     }
     .content{
         margin: 0px;
@@ -537,20 +610,86 @@ a{
         flex-direction: row;
         align-items: center;
     }
+
+
+    .asukoIconContainer{
+        width: 50px;
+        height: 50px;
+        /* border: solid 1px red; */
+    }
+    .asukoIcon{
+        width: 50px;
+        left: 0;
+
+        /* border: solid 1px red; */
+        
+    }
     .GabiImage{
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
         float: left;
     }
-    .quienSoyContent{
-        width: 50%;
-        float: right;
-    }
-
+   
     
 }
 
 /*! Responsive 400px de ancho*/
+@media screen and (max-width: 400px){
+    .firstContainer{
+        justify-content: space-around;
+    }
+    .titlePage{
+        font-size: 30px;
+    }
+    .content{
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .GabiImage{
+        width: 100px;
+        height: 100px;
+        float: left;
+    }
+    .quienSoyContent{
+        width: 80%;
+    }
+
+    .asukoIconContainer{
+        display: block;
+        width: 100%;
+        margin: auto;
+        position: none;
+        display: block;
+        margin: auto;
+    }
+    .asukoIcon{
+        display: flex;
+        margin: auto;
+        position: none;
+        top: 0;
+        width: 100px;
+    }
+
+    
+    .contactMeForm h2{
+        width: 160px;
+        font-size: 20px;
+        
+    }
+    .card{
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .gifs{
+        width: 90%;
+        padding: 0;
+        margin: 10px auto;
+    }
+}
 
 /* #endregion responsive*/
 
