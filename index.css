@@ -486,6 +486,14 @@ a{
     width: 50px;
 }
 
+.upArrowContainer{
+    width: 100%;
+}
+.upArrow{
+    float: right;
+    width: 100px;
+    margin-right: 20px;
+}
 
 /* #endregion fiveContainer*/
 
@@ -699,6 +707,15 @@ a{
     }
     .arrow{
         width: 80px;
+    }
+
+    .upArrowContainer{
+        display: flex;
+        justify-content: center;
+    }
+    .upArrow{
+        margin: 10px 0px 0px 0px;
+        width: 60px;
     }
 }
 
