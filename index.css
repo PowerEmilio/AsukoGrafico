@@ -491,7 +491,8 @@ a{
 }
 .upArrow{
     float: right;
-    width: 100px;
+    width: 80px;
+
     margin-right: 20px;
 }
 
