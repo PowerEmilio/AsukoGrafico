@@ -278,7 +278,7 @@ a{
     background-size: cover;
 }
 .card:nth-child(3){
-    background: linear-gradient(to top, rgb(0 0 0 / 0.7) 0%, rgb(0 0 0 / 0.0) 80%), url(realImages/banners/banner3.jpeg);
+    background: linear-gradient(to top, rgb(0 0 0 / 0.7) 0%, rgb(0 0 0 / 0.0) 80%), url(realImages/banners/banner3.jpg);
     background-size: cover;
 }
 .card p{
