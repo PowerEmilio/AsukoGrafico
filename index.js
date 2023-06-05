@@ -14,3 +14,22 @@ Box.addEventListener('mouseout', () =>{
     Box.style.transform = ``;
 
 })
+
+
+function irArriba(){
+    window.addEventListener('scroll', () => {
+        var scroll = document.documentElement.scrollTop;
+        console.log(scroll);
+        var botonArriba = document.querySelector('#upArrow');
+
+        if (scroll > 300) {
+            botonArriba.classList.remove('displayNone');
+            botonArriba.classList.add('upArrow');
+        } else{
+            botonArriba.classList.remove('upArrow');
+            botonArriba.classList.add('displayNone');
+        }
+    })
+}
+
+irArriba();

@@ -25,15 +25,21 @@ a{
 body{
     font-family: 'Roboto Mono', monospace;
 }
+.next h2{
+    padding-top: 10px;
+}
+
+
 /* #endregion basicos*/
 
 :root{
-    --morado: #502d62;
+    --morado: #5c3c6b;
     --rojo: #ff6961;
     --naranja: #f0932b;
     --green: #52ae86;
-    --darkGreen: #468e6f;
     --celeste: #84b6f4;
+    
+    --darkGreen: #468e6f;
 }
 
 /*!Primer Contenedor*/
@@ -65,7 +71,7 @@ body{
 .subTitlePage{
     text-align: center;
     font-size: 32px;
-    font-family: 'Shrikhand', cursive;
+    font-family: 'Montserrat', sans-serif;
     color: #dadada;
     filter: drop-shadow(3px 3px 10px #000);
     -webkit-filter: drop-shadow(3px 3px 10px #000);
@@ -489,17 +495,29 @@ body{
     width: 50px;
 }
 
-.upArrowContainer{
-    width: 100%;
+/* #endregion fiveContainer*/
+
+/*!Contenedor BotonArriba*/
+/* #region upArrow*/
+.displayNone{
+    display: none;
 }
 .upArrow{
-    float: right;
+    background-color: #333;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
     width: 80px;
 
-    margin-right: 20px;
-}
 
-/* #endregion fiveContainer*/
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+/* #endregion upArrow*/
 
 /*! Contenedor Responsive*/
 /* #region responsive*/
@@ -741,26 +759,30 @@ body{
 
 @keyframes arrowAnimation {
     0%{
-        transform: translateY(-20px);
-        -webkit-transform: translateY(-20px);
-        -moz-transform: translateY(-20px);
-        -ms-transform: translateY(-20px);
-        -o-transform: translateY(-20px);
-    }
+        transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -o-transform: translateY(-10px);
+}
     50%{
-        transform: translateY(20px);
-        -webkit-transform: translateY(20px);
-        -moz-transform: translateY(20px);
-        -ms-transform: translateY(20px);
-        -o-transform: translateY(20px);
+        transform: translateY(10px);
+        -webkit-transform: translateY(10px);
+        -moz-transform: translateY(10px);
+        -ms-transform: translateY(10px);
+        -o-transform: translateY(10px);
 }
     100%{
-        transform: translateY(-20px);
-        -webkit-transform: translateY(-20px);
-        -moz-transform: translateY(-20px);
-        -ms-transform: translateY(-20px);
-        -o-transform: translateY(-20px);
-    }
+        transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -o-transform: translateY(-10px);
+}
 }
 
 /* #endregion animations*/
+
+
+
+
