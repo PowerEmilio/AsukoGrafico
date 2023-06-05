@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Pacifico&family=Roboto+Mono:wght@300&family=Shrikhand&family=Space+Mono&family=Spline+Sans+Mono&display=swap');
 
-
+/*!Fuentes*/
 /* Fuentes:
 * font-family: 'Montserrat', sans-serif;
 * font-family: 'Pacifico', cursive;
@@ -10,6 +10,8 @@
 * font-family: 'Spline Sans Mono', monospace;
 */
 
+/*! Basicos*/
+/* #region basicos*/
 *{
     margin: 0;
     padding: 0;
@@ -20,22 +22,18 @@ a{
     text-decoration: none;
     list-style: none;
 }
+body{
+    font-family: 'Roboto Mono', monospace;
+}
+/* #endregion basicos*/
 
 :root{
-
-    --barColor:var(--green);
-    
-
-
     --morado: #502d62;
     --rojo: #ff6961;
     --naranja: #f0932b;
     --green: #52ae86;
     --darkGreen: #468e6f;
     --celeste: #84b6f4;
-
-    --secondColor: #583b5f;
-
 }
 
 /*!Primer Contenedor*/
@@ -203,6 +201,10 @@ a{
     flex-direction: column;
 }
 
+
+.habilidadesIconText{
+    text-align: center;
+}
 .Bar{
     width: 100%;
     height: 10px;
@@ -216,7 +218,7 @@ a{
 .barPorcentaje{
     height: 100%;
     width: calc(var(--w));
-    background-color: var(--barColor);
+    background-color: var(--green);
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -532,6 +534,9 @@ a{
         width: 150px;
         height: 150px;
     }
+    .habilidadesIconText{
+        font-size: 24px;
+    }
 
 
     .proyactsSection{
@@ -555,7 +560,6 @@ a{
         max-width: 900px;
     }
 }
-
 
 /*! Responsive 1024px de ancho*/
 @media screen and (max-width: 1024px) {
@@ -635,10 +639,10 @@ a{
         float: right;
     }
     .quienSoyContent h2{
-        font-size: 26px;
+        font-size: 20px;
     }
     .quienSoyContent p{
-        font-size: 16px;
+        font-size: 12px;
     }
     .content{
         margin: 0px;
@@ -665,6 +669,13 @@ a{
         width: 100px;
         height: 100px;
         float: left;
+    }
+
+    .next h2{
+        font-size: 26px;
+    }
+    .arrow{
+        width: 60px;
     }
    
     
